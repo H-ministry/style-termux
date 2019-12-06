@@ -264,8 +264,8 @@ updatedw() {
 }
 prm() { chmod +x *.\$1; }
 txt() { cat \$1.*; }
-PS1='\033[1;91m$uname@termux[\033[1;93m\W\033[1;91m]:
-# \033[1;92m'
+figlet $uname
+PS1='\033[1;91mm2.n0_0n3@H-Ministry[\033[1;93m\W\033[1;91m]: # \033[1;92m'
 if [ -d \"\$HOME/termuxstyling\" ]
 then
 	if grep -q '# 011' \"/data/data/com.termux/files/home/termuxstyling/.user.cfg\"
